@@ -1,5 +1,77 @@
+/*************** COMMON ***************/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}
+
+/*************** LAYOUT ***************/
+
+.CardContainer {
+    width: 55%;
+    height: auto;
+    margin: auto;
+}
+
+.card {
+    background-color: #0f0e17;
+    height: 80px;
+    width: calc(94% / 3);
+    box-shadow: rgb(189, 188, 188) 0px 8px 24px;
+    margin: 0 30px 40px 0;
+    float: left;
+}
+
+img {
+    max-height: 100%;
+    float: left;
+    margin-right: 15px;
+}
+
+
+.textbox {
+    height: 100%;
+    padding: 10px;
+}
+
+.lastcard {
+    margin-right: 0;
+}
+
+.CardContainer::after {
+    content: "";
+	clear: both;
+	display: table;
+}
+
+/*************** TEXT STYLE ***************/
+
+h1 {
+    color:  #E53170;
+    text-align: center;
+    margin: 20px 0 30px 0;
+}
+
+.centeredparagr {
+    text-align: center;
+    width: 55%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+h4, .profession, a{
+    color: white;
+    height: 33%;
+}
+
+a {
+    color: #0092e9;
+    text-decoration: none;
+}
+
+.profession {
+    font-size: 70%;
+    line-height: 2em;
 }
